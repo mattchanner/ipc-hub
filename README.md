@@ -1,6 +1,6 @@
 # ipc-hub
 
-This project is a messaging library to provide inter-process communication between running processes.
+This project is a messaging library to provide inter-process communication to .NET applications.
 
 At the moment, the main transport mechanism uses named pipes, so will only work for processes running on the same machine, but could be extended to provide a socket based transport mechanism in future.
 
