@@ -38,5 +38,5 @@ bus.Subscribe<MyMessage>(HandleMessage);
 Messages are published by calling Publish on the message bus:
 
 ```cs
-bus.Publish(new MyMessage { Text = "Hello World });
+bus.Publish(new MyMessage { Text = "Hello World" });
 ```
