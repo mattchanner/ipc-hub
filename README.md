@@ -38,3 +38,12 @@ Messages are published by calling Publish on the message bus:
 ```cs
 bus.Publish(new MyMessage { Text = "Hello World" });
 ```
+
+The value returned from the Subscribe method implements the IDispoable interface.  When Dispose is called on this instance, the client will be unsubscribed from the message.
+
+```cs
+IDisposable unsubscriber = bus.Subscribe<MyMessage>((s, e) => Console.WriteLine(e.Message.Text));
+
+// remove handler from bus
+unsubscriber.Dispose();
+```
