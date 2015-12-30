@@ -18,7 +18,7 @@ Likewise, clients of the hub can be created in the following way:
 IClientMessageBus clientBus = new ClientMessageBus(clientId);
 ```
 
-Messages send on the bus are strongly typed.  Subscribing to a message of a given type can be done in the following way:
+Messages sent on the bus are strongly typed.  Subscribing to a message of a given type can be done in the following way:
 
 ```cs
 class MyMessage {
